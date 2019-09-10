@@ -9,8 +9,9 @@ public class laxavecka37 {
 
 		Scanner	input = new Scanner (System.in);	
 	
+		System.out.println("Vad heter du?");
 	
-	
+	    String namn1 = input.nextLine();
 	
 	
 	

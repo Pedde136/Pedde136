@@ -18,7 +18,7 @@ System.out.println("Skriv ett namn");
 
 String namn4 = input.nextLine();
 
-System.out.println("Skriv ett nanm");
+System.out.println("hej");
 
 String namn5 = input.nextLine();
 

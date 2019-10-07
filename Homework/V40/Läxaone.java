@@ -2,7 +2,7 @@ package V40;
 
 import java.util.Scanner;
 
-public class HomeworkFOURone {
+public class Läxaone {
 
 	public static void main(String[] args) {
 

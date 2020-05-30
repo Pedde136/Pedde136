@@ -830,6 +830,9 @@ public class betterHangman {
 
 	}
 
+	/**
+	 * dialog över menyval
+	 */
 	public static void menuAlternatives() {
 
 		System.out.println(_outputStrings.get(0));
@@ -842,6 +845,9 @@ public class betterHangman {
 		System.out.println(_outputStrings.get(6));
 	}
 
+	/**
+	 * Avslutar spel
+	 */
 	public static void quitGame() {
 
 		System.out.println(_outputStrings.get(21));
@@ -864,6 +870,9 @@ public class betterHangman {
 		} while (true);
 	}
 	
+	/**
+	 * Väljer svårhetsgrad
+	 */
 	public static void difficulty() {
 		
 		System.out.println(_outputStrings.get(25));
@@ -904,7 +913,9 @@ public class betterHangman {
 		System.out.println();
 		
 	}
-	
+	/**
+	 * väljar antal gissningar
+	 */
 	public static void guesses() {
 		
 		System.out.println(_outputStrings.get(33));
@@ -940,14 +951,5 @@ public class betterHangman {
 		} while (true);
 		
 	}
-	
-	
+
 }
-
-
-
-
-
-
-
-

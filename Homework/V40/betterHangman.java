@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class betterHangman {
 
-	public static ArrayList<String> _easySwe = new ArrayList<String>(Arrays.asList(new String[] { "hej", "tja", "gook" }));
+	public static ArrayList<String> _easySwe = new ArrayList<String>(Arrays.asList(new String[] { "hej", "tja", "gook" })); //Arraylist som innehåller mina ord
 	public static ArrayList<String> _mediumSwe = new ArrayList<String>(Arrays.asList(new String[] { "hejsan", "tjena", "gooken" }));
 	public static ArrayList<String> _hardSwe = new ArrayList<String>(Arrays.asList(new String[] { "hejsvejs", "tjenare", "gookarnas" }));
 	public static ArrayList<String> _easyEng = new ArrayList<String>(Arrays.asList(new String[] { "hey", "yo", "gooc" }));
@@ -45,7 +45,8 @@ public class betterHangman {
 
 			case 1:
 
-				DifficultyAndGuesses();
+				difficulty();
+				guesses();
 				Game();
 
 				break;
@@ -87,82 +88,6 @@ public class betterHangman {
 			}
 
 		} while (true);
-	}
-
-	/**
-	 * Denna metod innehåller val av svårhetsgrad och antal gissningar
-	 */
-	public static void DifficultyAndGuesses() {
-
-		System.out.println(_outputStrings.get(25));
-		do {
-
-			System.out.println();
-
-			System.out.println(_outputStrings.get(26));
-			System.out.println(_outputStrings.get(27));
-			System.out.println(_outputStrings.get(28));
-
-			difficulty = GetValidInput();
-
-			setUpWordList();
-			if (difficulty == 1) {
-
-				System.out.println(_outputStrings.get(29));
-
-				break;
-			}
-
-			else if (difficulty == 2) {
-				System.out.println(_outputStrings.get(30));
-
-				break;
-			}
-
-			else if (difficulty == 3) {
-				System.out.println(_outputStrings.get(31));
-
-				break;
-			}
-
-			System.out.println(_outputStrings.get(32));
-
-		} while (true);
-
-		System.out.println();
-
-		System.out.println(_outputStrings.get(33));
-		do {
-
-			System.out.println();
-			System.out.println(_outputStrings.get(34));
-			System.out.println(_outputStrings.get(35));
-			System.out.println(_outputStrings.get(36));
-
-			totalGuesses = GetValidInput();
-
-			if (totalGuesses == 1) {
-				System.out.println(_outputStrings.get(37));
-				totalGuesses = 15;
-				break;
-			}
-
-			if (totalGuesses == 2) {
-				System.out.println(_outputStrings.get(38));
-				totalGuesses = 10;
-				break;
-			}
-
-			if (totalGuesses == 3) {
-				System.out.println(_outputStrings.get(39));
-				totalGuesses = 8;
-				break;
-			}
-
-			System.out.println(_outputStrings.get(32));
-
-		} while (true);
-
 	}
 
 	/**
@@ -938,4 +863,91 @@ public class betterHangman {
 			}
 		} while (true);
 	}
+	
+	public static void difficulty() {
+		
+		System.out.println(_outputStrings.get(25));
+		do {
+
+			System.out.println();
+
+			System.out.println(_outputStrings.get(26));
+			System.out.println(_outputStrings.get(27));
+			System.out.println(_outputStrings.get(28));
+
+			difficulty = GetValidInput();
+
+			setUpWordList();
+			if (difficulty == 1) {
+
+				System.out.println(_outputStrings.get(29));
+
+				break;
+			}
+
+			else if (difficulty == 2) {
+				System.out.println(_outputStrings.get(30));
+
+				break;
+			}
+
+			else if (difficulty == 3) {
+				System.out.println(_outputStrings.get(31));
+
+				break;
+			}
+
+			System.out.println(_outputStrings.get(32));
+
+		} while (true);
+
+		System.out.println();
+		
+	}
+	
+	public static void guesses() {
+		
+		System.out.println(_outputStrings.get(33));
+		do {
+
+			System.out.println();
+			System.out.println(_outputStrings.get(34));
+			System.out.println(_outputStrings.get(35));
+			System.out.println(_outputStrings.get(36));
+
+			totalGuesses = GetValidInput();
+
+			if (totalGuesses == 1) {
+				System.out.println(_outputStrings.get(37));
+				totalGuesses = 15;
+				break;
+			}
+
+			if (totalGuesses == 2) {
+				System.out.println(_outputStrings.get(38));
+				totalGuesses = 10;
+				break;
+			}
+
+			if (totalGuesses == 3) {
+				System.out.println(_outputStrings.get(39));
+				totalGuesses = 8;
+				break;
+			}
+
+			System.out.println(_outputStrings.get(32));
+
+		} while (true);
+		
+	}
+	
+	
 }
+
+
+
+
+
+
+
+
